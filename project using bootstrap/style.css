@@ -1,0 +1,167 @@
+
+/****************************************************************************
+    with bootstrap / adding our own style to bootstrap prewriiten ones
+****************************************************************************/
+
+/*******************************************
+            login.html
+*******************************************/
+
+body.login_body {
+    /** this class styles the entire page body**/
+    background-color: #e6f2ff;
+}
+
+.container.login_container {
+    /** styling the container itself using user defined login_container class **/
+    margin-top: 4%;
+}
+
+.card.login_card {
+    /** styling the card itself using user defined login_card class **/
+    /** we added the class login_card because we want to seperately add our own styles
+     in addition to bootstraps card class style.
+     also this class can be used to overwrite card class styles**/
+    padding: 20px 0px 20px ; 
+    background-color: #f4f4f4;
+
+    /** adding cool shadow to the card block **/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) ;
+
+    /** this will add shadow in chrome and safari  **/
+    -webkit-box-shadow : 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    /** this will add shadow for mozilla firefox **/
+    -moz-box-shadow : 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+img.login_image {   
+    padding:0 1rem 1rem;
+    margin:auto;
+    display:block; 
+}
+
+form.login_form {
+    /** to reduce size of form **/
+    max-width: 350px;
+
+    /** to centralise **/
+    margin: auto;
+}
+
+button.login_button {
+    /** overwritting and adding our own styles **/
+    width: 100%;
+}
+
+a.signup_link {
+    /** for alignment and someothers to work we need to make it a display:block; **/
+    display: block;
+
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/*******************************************
+            index.html
+*******************************************/
+
+div.section_light{
+    background-color: #eceeef;
+    padding: 2rem;
+}
+
+div.section_dark{
+    background-color: #cccccc;
+    padding:2rem;
+}
+
+/** section_top_light styles **/
+.jumbotron {
+    /** we overwrite prewritten bootstrap class .jumbotron **/
+    text-align: center;
+    background: none;
+    margin-bottom: .5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/** carosel styles **/
+img.d-block {
+    height: 320px;
+}
+
+.carousel-caption {
+    color: #FFD700;
+    text-shadow: 2px 2px 5px red;
+    font-style: italic;
+}
+
+
+/** section middle dark styles **/
+
+img.lipsum_img{
+    max-width: 60%;
+}
+
+div.button_wrapper{
+    margin: 1rem; 
+}
+
+button.get_books_button{
+    display: block;
+    margin: auto;
+}
+
+/** section light2 styles **/
+
+img.image_style{
+    /** centering **/
+    display: block;
+    margin: auto;
+
+}
+
+button.button_center{
+    display: block;
+    margin: auto;
+    width: 55%;
+}
+
+.column_wrapper{
+    margin-bottom: 1rem;
+}
+
+/** footer section **/
+
+.footer{
+    padding:1rem;
+}
+
+img.footer_rounded{
+    border-radius: 3rem !important;
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.fa-google-plus-square{
+    color: #c32f10;
+}
+
+.fa-instagram-square{
+    color: #ffffff;
+}
+
+.fab{
+    margin: 8px;
+}
+
+.font_wrapper{
+    margin: auto;
+}
